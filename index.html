@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Tatipamula Site</title>
+
+	<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="css/myStyle.css">
+</head>
+
+<body ng-app="myApp">
+	<div class="container">
+		<header class="well">
+			<!-- <img class="img-rounded" ng-src="images/te.PNG"/> -->
+			<h1>Tatipamula Enterprises</h1>
+		</header>
+
+		<!-- <div ng-include src="partials/header.html"></div> -->
+		<nav class="navbar">
+		    <ul class="nav navbar-nav">
+	      		<li class="active"><a ui-sref="home">Home</a></li>
+		      
+			    <li class="dropdown">
+			      	<a ui-sref="pase">Pase Meeting</a>
+			        <!-- <ul class="dropdown-menu">
+			          <li><a ui-sref="createpase">Create Schedule</a></li>
+			          <li><a ui-sref="viewpase">View Schedule</a></li>
+			          
+			        </ul> -->
+			    </li>
+
+			    <li class="dropdown">
+			    	<a ui-sref="open">Open Meeting</a>	
+			      	<!-- <a ui-sref="open" class="dropdown-toggle" data-toggle="dropdown">Open Meeting <span class="caret"> </span></a> -->
+					<!-- <ul class="dropdown-menu">
+							          		<li><a ui-sref="createopen">Create Pin winners</a></li>
+							          		<li><a ui-sref="viewopen">View Pin Winners</a></li>
+							        	</ul> -->
+			    </li>
+
+		     	<li class="dropdown">
+		      		<a ui-sref="trip">Trips Details <!-- <span class="caret"></span> --></a>
+					<!-- <ul class="dropdown-menu">
+								          <li><a ui-sref="uk">UK</a></li>
+								          <li><a ui-sref="australia">Australia</a></li>
+								          <li><a ui-sref="india">India</a></li>
+								          <li><a ui-sref="mexico">Mexico</a></li>
+							        	</ul> -->
+		      	</li>
+
+		      <li><a ui-sref="contact">Contact Us</a></li>
+
+		      <li><a ui-sref="about">About Us</a></li> 
+
+		    </ul>
+		</nav>
+
+
+
+
+		<div class="content">
+			<div class="well" ui-view></div>
+		</div>
+
+	
+
+	
+
+
+
+	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+
+	<!-- Latest compiled JavaScript -->
+	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+	<!-- Laterst Angularjs 2.0 version-->
+	<!-- <script type="text/javascript" src="js/plugins/angular.min.js"></script> -->
+
+	<!-- Laterst Angularjs 1.5.5 version-->
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.min.js"></script>
+
+	<!-- <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.min.js"></script> -->
+	<script type="text/javascript" src="js/plugins/angular-ui-router.min.js"></script>
+
+	<!-- local code JS file-->
+	<script type="text/javascript" src="js/app.js"></script>
+
+
+</body>
+</html>

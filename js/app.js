@@ -48,30 +48,38 @@ myApp.config(['$urlRouterProvider', '$stateProvider', function($urlRouterProvide
         url: '/contact',
         templateUrl: 'partials/contact.html',
         controller: 'contactCtrl'
+    })
+    .state('login', {
+        url: '/login',
+        templateUrl: 'partials/login.html',
+        controller: 'loginCtrl'
     });
  
 }]);
 myApp.controller('homeCtrl', ['$scope', function($scope){
-	$scope.welcomemsg="welcome to Home Page";
+	$scope.homeMsg="welcome to Home Page";
 }]);
 
 myApp.controller('paseCtrl', ['$scope', function($scope){
-	$scope.welcomemsg="welcome to Pase Schedules Page";
+	$scope.paseMeetingMsg="welcome to Pase Schedules Page";
 	/*$scope.createPase =[ "Product 1","Product 2","Product 3 Speaker","CD 1 Speaker","CD 2 Speaker", "Book Speaker","System topic Speaker", "Wrap up Speaker"];*/
 }]);
 
 myApp.controller('openCtrl', ['$scope', function($scope){
-	$scope.welcomemsg="welcome to Open meeting details Page";
+	$scope.openMeetingMsg="welcome to Open meeting details Page";
 }]);
 
 myApp.controller('tripCtrl', ['$scope', function($scope){
-	$scope.welcomemsg="welcome to Trip Details Page";
+	$scope.tripDetailsMsg="welcome to Trip Details Page";
 }]);
 
 myApp.controller('contactCtrl', ['$scope', function($scope){
-	$scope.welcomemsg="welcome to Contact Us Page";
+	$scope.contactUsMsg="welcome to Contact Us Page";
 }]);
 
 myApp.controller('aboutCtrl', ['$scope', function($scope){
-	$scope.welcomemsg="welcome to About Us Page";
+	$scope.aboutUsMsg="welcome to About Us Page";
+}]);
+myApp.controller('loginCtrl', ['$scope', function($scope){
+    $scope.loginMsg="welcome to Login Page";
 }]);
